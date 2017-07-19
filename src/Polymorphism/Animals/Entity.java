@@ -5,9 +5,9 @@ package Polymorphism.Animals;
  */
 public abstract class Entity implements Communicate{
 
-    String name;
-    String type;
-    String sound;
+    private String name;
+    private String type;
+    private String sound;
 
     String getName() {
         return name;
@@ -22,12 +22,6 @@ public abstract class Entity implements Communicate{
     }
 
     public Entity(String name, String type, String sound) {
-        this.name = name;
-        this.type = type;
-        this.sound = sound;
-    }
-
-    public Entity() {
         this.name = name;
         this.type = type;
         this.sound = sound;
