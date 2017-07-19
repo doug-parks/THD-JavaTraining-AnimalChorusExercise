@@ -1,4 +1,5 @@
 package Polymorphism.Animals;
+
 import java.util.ArrayList;
 
 /**
@@ -6,14 +7,6 @@ import java.util.ArrayList;
  */
 public class Chorus {
 
-    // create animals arraylist for storing all of the animals
-    public ArrayList<Animal> animals = new ArrayList<Animal>();  //creates an ArrayList for storing animals
+    public ArrayList<Entity> entities = new ArrayList<>();  //creates an ArrayList for storing entities in a chorus
 
-    public void sing(){
-
-        //iterate through all animals in the animals array list and print their name, type, and vocals
-        for (int i = 0; i < animals.size(); i++){
-            System.out.println(animals.get(i).getName() + " the " + animals.get(i).getType() + " says, \"" + animals.get(i).getSound() + "\"");
-        }
-    }
 }
